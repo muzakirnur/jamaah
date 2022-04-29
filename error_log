@@ -1,0 +1,4 @@
+[13-Apr-2022 01:30:38 Asia/jakarta] PHP Fatal error:  Cannot redeclare M_data::update_data() in /home/reso2947/public_html/jamaah/application/models/M_data.php on line 344
+[13-Apr-2022 01:31:20 Asia/jakarta] PHP Fatal error:  Cannot redeclare M_data::update_data() in /home/reso2947/public_html/jamaah/application/models/M_data.php on line 344
+[13-Apr-2022 01:31:49 Asia/jakarta] PHP Fatal error:  Cannot redeclare M_data::update_data() in /home/reso2947/public_html/jamaah/application/models/M_data.php on line 344
+[13-Apr-2022 01:32:57 Asia/jakarta] PHP Fatal error:  Cannot redeclare M_data::update_data() in /home/reso2947/public_html/jamaah/application/models/M_data.php on line 344

@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header text-center">
+      <h4>Data Ketua Kelas</h4>
+    </div>
+    <div class="card-body">
+
+      <a href="<?php echo base_url().'admin/ketua_kelas_tambah' ?>" class='btn btn-sm btn-success pull-right'><i class="fa fa-plus"></i> Admin kelas Baru</a>
+      <br/>
+      <br/>
+      
+<div class="table-responsive">
+<table class="table-center text-center table-bordered table-striped table-hover table-datatable">
+<thead>
+<tr>
+              <th width="1%">No</th>
+          <th>Nama</th>
+          <th>Username</th>
+          <th>Kecamatan</th>
+          <th>Gampong</th>
+          <th>Kelas</th>
+          <th width="16%">Opsi</th> 
+</thead>
+<tbody>
+<?php
+$no = 1;
+foreach($ketua_kelas as $p){
+?>
+<tr>
+ <td><?php echo $no++; ?></td>
+            <td><?php echo $p->nama; ?></td>
+            <td><?php echo $p->username; ?></td>
+            <td><?php echo $p->kecamatan; ?></td>
+            <td><?php echo $p->gampong; ?></td>
+            <td><?php echo $p->kelas; ?></td>
+            <td>
+              <a href="<?php echo base_url().'admin/ketua_kelas_edit/'.$p->id; ?>" class="btn btn-sm btn-warning"><i class="fa fa-wrench"></i> Edit</a>
+              <a href="<?php echo base_url().'admin/ketua_kelas_hapus/'.$p->id; ?>" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> Hapus</a>
+            </td>
+            </tr>
+            
+            <?php
+          }
+          ?>
+        </tbody>
+      </table>     
+  </div>
+</div>
